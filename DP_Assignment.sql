@@ -1,7 +1,9 @@
--- Database: jyoti_dp
+---Executed in pgAdmin4
 
--- DROP DATABASE IF EXISTS jyoti_dp;
+--Creating superuser to have all privileges and permissions within the database
+CREATE ROLE postgres SUPERUSER LOGIN PASSWORD 'xxxxxxxx';
 
+---Creating database
 CREATE DATABASE jyoti_dp
     WITH
     OWNER = postgres
@@ -13,6 +15,7 @@ CREATE DATABASE jyoti_dp
     CONNECTION LIMIT = -1
     IS_TEMPLATE = False;
 
+-----Loading Port coordinate data to updated_pub table
 drop table updated_pud;
 CREATE TABLE updated_pud
 (OID_ text,
@@ -127,9 +130,7 @@ Longitude float );
 COPY updated_pud
  FROM 'D:\Jyoti_DP_Assignment\Data\UpdatedPub150.csv' HEADER CSV DELIMITER ',';
 
-
-select * from updated_pud limit 10;
-
+----Uploading 1st and 2nd Jan'20 AIS data
 drop table ais_1_2_jan_data;
 CREATE TABLE ais_1_2_jan_data
 (mmsi text,
@@ -156,10 +157,7 @@ COPY ais_1_2_jan_data
 COPY ais_1_2_jan_data
  FROM 'D:\Jyoti_DP_Assignment\Data\Temp\AIS_2020_01_02.csv' HEADER CSV DELIMITER ',';
 
-
-select date(basedatetime) as dt,count(distinct mmsi) as distict_mmsi,count(mmsi) as tot_mmis from ais_1_2_jan_data 
-	group by dt limit 10;
-
+------Understanding the number of different statistics at each day---- 
 select date(basedatetime) as dt,count(distinct mmsi) as distict_mmsi,count(mmsi) as tot_mmis
 ,count(case when lower(vesselname) like '%cargo%' then mmsi end) as cargo_in_name
 ,count(case when vesselname is not null  then mmsi end) as cargo_notnull
@@ -169,7 +167,14 @@ select date(basedatetime) as dt,count(distinct mmsi) as distict_mmsi,count(mmsi)
 "2020-01-01"	14044	7,040,389	1219	6,443,516	408,934
 "2020-01-02"	14490	6,981,827	1166	6,388,507	398,911
 
+-----Keeping only cargo vessels records 	
 drop table cargo_vessels_ais;
 create table cargo_vessels_ais as 
 	select * from ais_1_2_jan_data where vesseltype in (70,71,71,73,74,75,76,77,78,79,1003,1004);
 
+--Creating another user , which can access the creating tables with my DB
+-- Step 1: Create the User
+CREATE ROLE my_user LOGIN PASSWORD 'xxxxxxxxx';
+
+-- Grant SELECT permission on all tables in all schemas to the user role
+GRANT SELECT ON ALL TABLES IN SCHEMA public TO my_user;
