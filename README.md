@@ -29,6 +29,5 @@ We have two data sets:
 * **plotly(5.9.0)** : Plotly.express is a high-level interface for creating interactive visualizations with Plotly, providing a simple and intuitive API for generating a wide range of plots and charts with minimal code.
 
 ## Usage
-- Start with loading the data into local postgres server
-- [SQL Script
-]([url](https://github.com/jyoti2728/DP-Assignment/blob/main/DP_Assignment.sql))
+- Start with SQL Script to create user, define roles and then creating the schema and uploading the data into table.
+  Refer this [SQL Script](https://github.com/jyoti2728/DP-Assignment/blob/main/DP_Assignment.sql) for complete steps.
