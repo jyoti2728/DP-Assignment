@@ -28,4 +28,5 @@ We have two data sets:
 * **warnings(3.11.7)** : The warnings module provides a flexible way to handle warning messages in Python code, allowing developers to control how warnings are displayed or handled during runtime.
 * **plotly(5.9.0)** : Plotly.express is a high-level interface for creating interactive visualizations with Plotly, providing a simple and intuitive API for generating a wide range of plots and charts with minimal code.
 
-
+## Usage
+- Start with loading the data into local postgres server
