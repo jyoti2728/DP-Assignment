@@ -30,3 +30,5 @@ We have two data sets:
 
 ## Usage
 - Start with loading the data into local postgres server
+- [SQL Script
+]([url](https://github.com/jyoti2728/DP-Assignment/blob/main/DP_Assignment.sql))
