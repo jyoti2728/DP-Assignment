@@ -31,3 +31,4 @@ We have two data sets:
 ## Usage
 - Start with SQL Script to create user, define roles and then creating the schema and uploading the data into table.
   Refer this [SQL Script](https://github.com/jyoti2728/DP-Assignment/blob/main/DP_Assignment.sql) for complete steps.
+- For further analysis to find if there is any variance with demand from the 1st of January and the 2nd of January. Refer
