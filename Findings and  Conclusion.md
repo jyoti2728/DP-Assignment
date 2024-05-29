@@ -13,5 +13,10 @@
 *  **Bounding box** : To further sample down the cargo vessels data, create the bounding box that will capture on thoso vessels which were near the Long Beach Port.
    **How to decide the height and widht of box?**
      1) Start with plotting all the ports coordinates to observe the proximity of one port with another so that we do not include the demand of other ports.
-     
-    
+
+    The green one is the Long Beach Port and black ones are other ports whose harbor use is not defined.
+    ![image](https://github.com/jyoti2728/DP-Assignment/assets/170928275/714961b4-3ac0-4996-b204-d3ecd7d6d305)
+
+    If we zoom it a little bit to clearly see the bounding box boundaries:
+    ![image](https://github.com/jyoti2728/DP-Assignment/assets/170928275/c8586d33-f0c9-4384-b6e6-5f287540b636)
+
