@@ -10,4 +10,8 @@
 | 01/01/2020  | 7,040,389  | 408,934  |
 | 02/01/2020  | 6,981,827  |  398,911  |
 
-*  **Bounding box** : To f
+*  **Bounding box** : To further sample down the cargo vessels data, create the bounding box that will capture on thoso vessels which were near the Long Beach Port.
+   **How to decide the height and widht of box?**
+     1) Start with plotting all the ports coordinates to observe the proximity of one port with another so that we do not include the demand of other ports.
+     
+    
