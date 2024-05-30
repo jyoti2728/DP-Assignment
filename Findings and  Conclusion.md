@@ -20,3 +20,15 @@
     If we zoom it a little bit to clearly see the bounding box boundaries:
     ![image](https://github.com/jyoti2728/DP-Assignment/assets/170928275/c8586d33-f0c9-4384-b6e6-5f287540b636)
 
+   #### After few simulation , the approporiate height and width that encompass the long beach port and cargo vessels throughout the day
+    * *height=0.0485* 
+    * *width=0.0966*
+ 
+    *For illustartion purpose , plotted just few samples from the entire data to show cargo vessels that were near long beach port throughout the day*
+    ![image](https://github.com/jyoti2728/DP-Assignment/assets/170928275/611f34a1-8659-41b0-bcb3-c611fae66a49)
+  
+ 
+  ### Demand variance between 1<sup>st</sup> Jan 2020 to 2<sup>nd</sup> Jan 2020
+  The appoporiate temporal resolution to illustrate the demand variation that port experienced throughout the day is by plotting a line chart.  
+![image](https://github.com/jyoti2728/DP-Assignment/assets/170928275/8e7be69a-928d-40ad-8f7e-c44c20e50a4f)
+
