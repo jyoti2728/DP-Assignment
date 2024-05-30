@@ -2,7 +2,7 @@
 
 ### Sampling down AIS data
 
-* **Cargo Vessels** : Since we are required to study on cargo vessels, filter out by putting the vesseltype codes. The reference for cargo vessels type code can be found in VesselTypeCodes2018.pdf file.
+* **Cargo Vessels** : Since we are required to study on cargo vessels, filter out by putting the vesseltype codes. The reference for cargo vessels type code can be found in [VesselTypeCodes2018.pdf](https://github.com/jyoti2728/DP-Assignment/blob/main/VesselTypeCodes2018.pdf) file.
   By Doing this the data would signigicantly reduce from millions to hunderds of rows.
 
 | Date  | Total mmsi | Total Cargo mmsi |
