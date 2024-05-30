@@ -31,7 +31,7 @@ We have two data sets:
 
 ## Usage
 - Start with downloading latest postgres to setup a local server for window from : [Postgres Software](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads). Then follow the instruction for installation [Installation steps](https://www.youtube.com/watch?v=0n41UTkOBb0).
-- Post completing the istallation run the SQL Script to create user, define roles and then creating the schema to upload the data into tables.
+- Post completing the installation step, run the SQL Script to create user, define roles and then creating the schema to upload the data into tables.
   Refer this [SQL Script](https://github.com/jyoti2728/DP-Assignment/blob/main/DP_Assignment.sql) for complete steps.
 - For further analysis to find if there is any variance with demand from the 1st of January and the 2nd of January. Run python [Notebook](https://github.com/jyoti2728/DP-Assignment/blob/main/DP_Assignment_new.ipynb).
 
