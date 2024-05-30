@@ -29,6 +29,9 @@ We have two data sets:
 * **plotly(5.9.0)** : Plotly.express is a high-level interface for creating interactive visualizations with Plotly, providing a simple and intuitive API for generating a wide range of plots and charts with minimal code.
 
 ## Usage
-- Start with SQL Script to create user, define roles and then creating the schema and uploading the data into table.
+- Start with downloading latest postgres to setup a local server for window from : [Postgres Software](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads). Then follow the instruction for installation [Installation steps](https://www.youtube.com/watch?v=0n41UTkOBb0).
+- Post completing the istallation run the SQL Script to create user, define roles and then creating the schema to upload the data into tables.
   Refer this [SQL Script](https://github.com/jyoti2728/DP-Assignment/blob/main/DP_Assignment.sql) for complete steps.
-- For further analysis to find if there is any variance with demand from the 1st of January and the 2nd of January. Refer this [Notebook](https://github.com/jyoti2728/DP-Assignment/blob/main/DP_Assignment.ipynb)
+- For further analysis to find if there is any variance with demand from the 1st of January and the 2nd of January. Run python [Notebook](https://github.com/jyoti2728/DP-Assignment/blob/main/DP_Assignment.ipynb).
+
+## Refer to the [Findings and Conclusion] to file for insights
