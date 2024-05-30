@@ -34,4 +34,4 @@ We have two data sets:
   Refer this [SQL Script](https://github.com/jyoti2728/DP-Assignment/blob/main/DP_Assignment.sql) for complete steps.
 - For further analysis to find if there is any variance with demand from the 1st of January and the 2nd of January. Run python [Notebook](https://github.com/jyoti2728/DP-Assignment/blob/main/DP_Assignment.ipynb).
 
-## Refer to the [Findings and Conclusion] to file for insights
+### Refer to the [Findings and Conclusion](https://github.com/jyoti2728/DP-Assignment/blob/main/Findings%20and%20%20Conclusion.md) for insights.
