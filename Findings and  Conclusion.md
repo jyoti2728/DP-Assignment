@@ -20,7 +20,7 @@
     If we zoom it a little bit to clearly see the bounding box boundaries:
     ![image](https://github.com/jyoti2728/DP-Assignment/assets/170928275/c8586d33-f0c9-4384-b6e6-5f287540b636)
 
-   #### After few simulation , the approporiate height and width that encompass the long beach port and cargo vessels throughout the day
+   #### After few simulation , the approporiate height and width that encompass the Long Beach Port and cargo vessels throughout the day
     * *height=0.0485* 
     * *width=0.0966*
  
