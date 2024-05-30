@@ -27,14 +27,13 @@
     *For illustartion purpose , plotted just few samples from the entire data to show cargo vessels that were near long beach port throughout the day*
     ![image](https://github.com/jyoti2728/DP-Assignment/assets/170928275/611f34a1-8659-41b0-bcb3-c611fae66a49)
   
- 
   ### Demand variance between 1<sup>st</sup> Jan 2020 to 2<sup>nd</sup> Jan 2020
   The appoporiate temporal resolution to illustrate the demand variation that port experienced throughout the day is by plotting a line chart.  
 ![image](https://github.com/jyoti2728/DP-Assignment/assets/170928275/8e7be69a-928d-40ad-8f7e-c44c20e50a4f)
 
 ### It is clearly visible from the plot that there is large demand in variance from 1st Jan to 2nd Jan
 
-### To support this statistcally, use paired t-test for determining whether there is a significant difference in demand between January 1st and January 2nd
+### To check this statistcally, use paired t-test for determining whether there is a significant difference in demand between January 1st and January 2nd
 
 **Null Hypothesis** :There's no difference in the mean number of vessels between January 1st and January 2nd.
 
@@ -43,3 +42,12 @@
 P-value: 8.85843279270694e-05
 
 **Reject the null hypothesis. There is a statistically significant difference in demand.**
+
+### **why there is demand variation?** 
+_Assumption is that, this could be a holiday effect. January 1st is New Year's Day, a public holiday in the United States. So, there might be reduced operational activities at ports due to closures or reduced working hour that delayed all operations until after the holiday, leading to lower demand for cargo vessels on January 1st compared to other days._
+
+To support this, if we look demand for 3rd and 4th Jan 2020 with same filters.
+![image](https://github.com/jyoti2728/DP-Assignment/assets/170928275/bc93f535-61d6-40e9-88bd-1122cc37eafd)
+
+We can cleary see there is no demand shift from 2nd Jan to 4th Jan and there have almost similar demand throughout the day.
+
