@@ -27,7 +27,7 @@
     *For illustartion purpose , plotted just few samples from the entire data to show cargo vessels that were near Long Beach Port throughout the day*
     ![image](https://github.com/jyoti2728/DP-Assignment/assets/170928275/611f34a1-8659-41b0-bcb3-c611fae66a49)
   
-  ### Demand variance between 1<sup>st</sup> Jan 2020 to 2<sup>nd</sup> Jan 2020
+  ### Demand variation between 1<sup>st</sup> Jan 2020 to 2<sup>nd</sup> Jan 2020
   The appoporiate temporal resolution to illustrate the demand variation that port experienced throughout the day is by plotting a line chart.  
 ![image](https://github.com/jyoti2728/DP-Assignment/assets/170928275/8e7be69a-928d-40ad-8f7e-c44c20e50a4f)
 
