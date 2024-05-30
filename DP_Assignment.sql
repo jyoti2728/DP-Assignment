@@ -172,9 +172,44 @@ drop table cargo_vessels_ais;
 create table cargo_vessels_ais as 
 	select * from ais_1_2_jan_data where vesseltype in (70,71,71,73,74,75,76,77,78,79,1003,1004);
 
+-------------Vaidation Data Set to support the Demand drop due to Holiday on 1st Jan
+drop table ais_val_data;
+CREATE TABLE ais_val_data
+(mmsi text,
+basedatetime timestamp,
+lat float,
+lon float,
+sog Float,
+cog Float,
+heading Float,
+vesselname text,
+imo text,
+callsign text,
+vesseltype integer,
+status integer,
+length float,
+width float,
+draft float,
+cargo text,
+transceiverclass text
+);
+COPY ais_val_data
+ FROM 'D:\Jyoti_DP_Assignment\Data\Temp\AIS_2020_01_03.csv' HEADER CSV DELIMITER ',';
+
+COPY ais_val_data
+ FROM 'D:\Jyoti_DP_Assignment\Data\Temp\AIS_2020_01_04.csv' HEADER CSV DELIMITER ',';
+
+
+-----Keeping only cargo vessels records from Validation set	
+drop table cargo_vessels_ais_val_dt;
+create table cargo_vessels_ais_val_dt as 
+select * from ais_val_data where vesseltype in (70,71,71,73,74,75,76,77,78,79,1003,1004);
+
+
 --Creating another user , which can access the creating tables with my DB
 -- Step 1: Create the User
 CREATE ROLE my_user LOGIN PASSWORD 'xxxxxxxxx';
 
 -- Grant SELECT permission on all tables in all schemas to the user role
 GRANT SELECT ON ALL TABLES IN SCHEMA public TO my_user;
+
