@@ -27,6 +27,7 @@ We have two data sets:
 * **gc(3.11.7)** : The gc (garbage collector) module provides an interface to the garbage collection mechanism in Python, allowing control over the automatic memory management system.
 * **warnings(3.11.7)** : The warnings module provides a flexible way to handle warning messages in Python code, allowing developers to control how warnings are displayed or handled during runtime.
 * **plotly(5.9.0)** : Plotly.express is a high-level interface for creating interactive visualizations with Plotly, providing a simple and intuitive API for generating a wide range of plots and charts with minimal code.
+* **scipy(1.11.4)** :SciPy is a Python library for scientific computing and technical computing, providing tools for numerical integration, optimization, interpolation, linear algebra, statistics, signal processing, and more
 
 ## Usage
 - Start with downloading latest postgres to setup a local server for window from : [Postgres Software](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads). Then follow the instruction for installation [Installation steps](https://www.youtube.com/watch?v=0n41UTkOBb0).
